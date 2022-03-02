@@ -8,11 +8,13 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
+import { EventTableComponent } from './components/event-table/event-table.component';
 
 
 @NgModule({
 	declarations: [
-		AppComponent
+		AppComponent,
+  EventTableComponent
 	],
 	imports: [
 		BrowserModule,
