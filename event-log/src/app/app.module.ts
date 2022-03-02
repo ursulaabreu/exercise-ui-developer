@@ -14,7 +14,7 @@ import { EventTableComponent } from './components/event-table/event-table.compon
 @NgModule({
 	declarations: [
 		AppComponent,
-  EventTableComponent
+  		EventTableComponent
 	],
 	imports: [
 		BrowserModule,
@@ -25,7 +25,8 @@ import { EventTableComponent } from './components/event-table/event-table.compon
 		MatIconModule,
 		MatTableModule
 	],
-	providers: [],
+	providers: [
+	],
 	bootstrap: [AppComponent]
 })
 export class AppModule { }

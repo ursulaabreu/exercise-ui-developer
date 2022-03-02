@@ -1,0 +1,39 @@
+.event-table-container {
+	.event-table{
+		width: 100%;
+
+		.mat-header-cell {
+			color: #3c485b;
+			border-bottom: 1px solid #3c485b;
+			font-size: 14px;
+		}
+
+		.mat-row .mat-cell {
+			border-bottom: 1px solid transparent;
+			border-top: 1px solid transparent;
+			cursor: default;
+		}
+		  
+		.mat-row:hover .mat-cell {
+			background-color: rgba(255,228,134,0.3);
+			border-color: #3c485b;
+		}
+
+		.mat-row:hover:first-child .mat-cell {
+			border-top: 1px solid transparent;
+		}
+
+		.level {
+			display: inline-flex;
+
+			.mat-icon {
+				margin: auto 0;
+			}
+
+			&-text {
+				margin: auto 0;
+				padding-left: 12px;
+			}
+		}
+	}
+}

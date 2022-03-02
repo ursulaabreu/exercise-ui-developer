@@ -1,10 +1,10 @@
 export interface Event {
 	timestamp: string;
-	level: Level;
+	level: LevelEnum;
 	message: string;
 }
 
-export enum Level {
+export enum LevelEnum {
 	INFO,
 	WARNING,
 	ERROR
