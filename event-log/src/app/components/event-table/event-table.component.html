@@ -1,5 +1,5 @@
 <div class="event-table-container">
-	<table mat-table [dataSource]="events" class="event-table">
+	<table mat-table [dataSource]="getShowEvents()" class="event-table">
 
       <!-- Time Column -->
       <ng-container matColumnDef="event-time">

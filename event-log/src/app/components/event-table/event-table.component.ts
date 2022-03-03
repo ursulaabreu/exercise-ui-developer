@@ -20,4 +20,10 @@ export class EventTableComponent implements OnInit {
 		row.hover = value;
 		this.eventsChange.emit(this.events);
 	}
+
+	getShowEvents() {
+		return this.events.filter((event) => {
+			return event.showOnTable;
+		});
+	}
 }
