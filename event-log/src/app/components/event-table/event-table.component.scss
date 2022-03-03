@@ -13,13 +13,13 @@
 			border-top: 1px solid transparent;
 			cursor: default;
 		}
-		  
-		.mat-row:hover .mat-cell {
+
+		.event-hover .mat-cell {
 			background-color: rgba(255,228,134,0.3);
 			border-color: #3c485b;
 		}
 
-		.mat-row:hover:first-child .mat-cell {
+		.event-hover:first-child .mat-cell {
 			border-top: 1px solid transparent;
 		}
 

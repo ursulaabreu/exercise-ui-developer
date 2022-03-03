@@ -9,12 +9,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
 import { EventTableComponent } from './components/event-table/event-table.component';
+import { EventTimelineComponent } from './components/event-timeline/event-timeline.component';
+import { EventLogPageComponent } from './components/event-log-page/event-log-page.component';
 
 
 @NgModule({
 	declarations: [
 		AppComponent,
-  		EventTableComponent
+  		EventTableComponent,
+    	EventTimelineComponent,
+     	EventLogPageComponent
 	],
 	imports: [
 		BrowserModule,
