@@ -8,7 +8,8 @@ import {
 	ViewChildren,
 	EventEmitter,
 	OnInit, 
-	Output
+	Output,
+	HostListener
   } from '@angular/core';
 import { EventViewModel } from 'src/app/models/event-view-model';
 
@@ -23,6 +24,11 @@ export class EventTimelineComponent implements OnInit, AfterViewInit {
 
 	@ViewChildren('timelineEvents')
 	timelineEvents!: QueryList<ElementRef>;
+
+	@HostListener('window:resize', ['$event'])
+	onResize() {
+		this.setDatePosition(this.events);
+	}
 
 	@Input() events!: EventViewModel[];
 
