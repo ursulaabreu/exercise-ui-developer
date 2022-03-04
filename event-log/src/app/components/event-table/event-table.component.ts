@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { Event } from 'src/app/models';
+import { EventViewModel } from 'src/app/models/event-view-model';
 
 @Component({
 	selector: 'app-event-table',
@@ -8,15 +8,15 @@ import { Event } from 'src/app/models';
 })
 export class EventTableComponent implements OnInit {
 	public displayedColumns: string[] = ['event-time', 'event-level', 'event-message'];
-	@Input() events!: Array<Event>;
-	@Output() eventsChange = new EventEmitter<Array<Event>>();
+	@Input() events!: EventViewModel[];
+	@Output() eventsChange = new EventEmitter<EventViewModel[]>();
 
 	constructor() { }
 
 	ngOnInit(): void {
 	}
 
-	changeHover(row: Event, value: boolean) {
+	changeHover(row: EventViewModel, value: boolean) {
 		row.hover = value;
 		this.eventsChange.emit(this.events);
 	}

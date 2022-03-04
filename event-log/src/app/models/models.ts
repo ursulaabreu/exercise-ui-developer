@@ -1,22 +1,15 @@
 export interface ResponseEvent {
 	timestamp: string;
-	level: LevelEnum;
+	level: 'INFO' | 'WARNING' | 'ERROR';
 	message: string;
 }
 
-export interface Event {
-	timestamp: string;
-	level: LevelEnum;
+export interface EventDisplay {
+	timestamp: Date;
+	level: 'INFO' | 'WARNING' | 'ERROR';
 	message: string;
-	date: Date;
 	color: string;
 	hover: boolean;
 	showOnTable: boolean;
 	levelText: string;
-}
-
-export enum LevelEnum {
-	INFO,
-	WARNING,
-	ERROR
 }

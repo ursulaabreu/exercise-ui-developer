@@ -1,4 +1,4 @@
-<div class="event-table-container">
+<section class="event-table-container">
 	<table mat-table [dataSource]="getShowEvents()" class="event-table">
 
       <!-- Time Column -->
@@ -8,7 +8,7 @@
 		</th>
         <td mat-cell *matCellDef="let row">
 			<div>
-				{{ row.timestamp }}
+				{{ row.timestamp | date:'long' }}
 			</div>
 		</td>
       </ng-container>
@@ -44,4 +44,4 @@
 			(mouseleave)="changeHover(row, false)"
 			[ngClass]="row.hover ? 'event-hover' : ''"></tr>
     </table>
-</div>
+</section>

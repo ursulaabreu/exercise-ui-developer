@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -11,7 +11,6 @@ import { MatTableModule } from '@angular/material/table';
 import { EventTableComponent } from './components/event-table/event-table.component';
 import { EventTimelineComponent } from './components/event-timeline/event-timeline.component';
 import { EventLogPageComponent } from './components/event-log-page/event-log-page.component';
-
 
 @NgModule({
 	declarations: [

@@ -1,1 +1,26 @@
-<p>event-timeline works!</p>
+<section class="timeline">
+	<div class="timeline-events">
+		<div class="timeline-events-line" #eventsWrapper>
+			<ol>
+				<li *ngFor="let event of events"
+					[ngClass]="{
+						'event-hover': event.hover,
+						'info': event.level.toString() === 'INFO',
+						'warning': event.level.toString() === 'WARNING',
+						'error': event.level.toString() === 'ERROR'
+					}"
+					(mouseover)="changeHover(event, true)" 
+					(mouseleave)="changeHover(event, false)">
+					<div class="event-date" #timelineEvents>
+						<div>
+							{{ event.timestamp | date:'dd/MM/yyyy' }}
+						</div>
+						<div>
+							{{ event.timestamp | date:'hh:mm:ss' }}
+						</div>
+					</div>
+				</li>
+			</ol>
+		</div>
+	</div>
+</section>
