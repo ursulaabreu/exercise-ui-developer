@@ -1,10 +1,12 @@
+$dark-blue: #3c485b;
+
 .event-table-container {
 	.event-table{
 		width: 100%;
 
 		.mat-header-cell {
 			color: #3c485b;
-			border-bottom: 1px solid #3c485b;
+			border-bottom: 1px solid $dark-blue;
 			font-size: 14px;
 		}
 
@@ -16,7 +18,7 @@
 
 		.event-hover .mat-cell {
 			background-color: rgba(255,228,134,0.3);
-			border-color: #3c485b;
+			border-color: $dark-blue;
 		}
 
 		.event-hover:first-child .mat-cell {
